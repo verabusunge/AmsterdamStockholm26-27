@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public float speed = 5f;
+    public bool IsGrounded;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,10 +15,37 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current.uKey.isPressed)
+        if (Keyboard.current.dKey.isPressed) //if D is pressed
         {
-            transform.position += new Vector3(0, 1, 0) * Time.deltaTime;
-            Debug.Log("shejd");
+            transform.position += Vector3.right * speed * Time.deltaTime; //go right
+        }
+        if (Keyboard.current.aKey.isPressed) //if a is pressed
+        {
+            transform.position += Vector3.left * speed * Time.deltaTime; //go left
+        }
+
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && IsGrounded == true)
+        {
+            transform.position += Vector3.up * speed * 100 * Time.deltaTime;
+        }
+
+
+
+        if (transform.position.y <= -10)
+        {
+            Start();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("DF"))
+        {
+            IsGrounded = true;
+        }
+        else
+        {
+            IsGrounded = false;
         }
     }
 }
