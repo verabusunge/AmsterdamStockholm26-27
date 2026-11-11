@@ -31,21 +31,21 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        if (transform.position.y <= -10)
+        if (transform.position.y <= -10) //if y is under -10
         {
-            Start();
+            Start(); //play the entie start void which is just respawn to start
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("DF"))
+        if (collision.gameObject.CompareTag("DF")) //if touching something with the tag "DF"
         {
-            IsGrounded = true;
+            IsGrounded = true; //bool will be true
         }
-        else
+        else //if its not colliding with something that has the tag
         {
-            IsGrounded = false;
+            IsGrounded = false; //turns off the bool which makes it not able to jump
         }
     }
 }
