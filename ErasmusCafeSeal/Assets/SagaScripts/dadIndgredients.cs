@@ -24,13 +24,13 @@ public class dadIndgredients : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
 
-       if (image != null) image.RaycastTarget = false;
+        if (image != null) image.raycastTarget = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("Dragging");
-        Vector2 newPosition = new Vector2(trans.position.x, Input.mousePosition.y);
+        Vector2 newPosition = new Vector2(trans.position.x, Input.mousePosition.y); 
         newPosition.y = Input.mousePosition.y;
         trans.position = newPosition;
     }
