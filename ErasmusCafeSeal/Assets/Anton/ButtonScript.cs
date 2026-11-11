@@ -23,10 +23,10 @@ public class ButtonScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
 
-    //private void OnMouseEnter()
-    //{
-     //   Debug.Log("jsje");
-     //   SceneManager.LoadScene("Anton");
-    //}
+    /*private void OnMouseEnter()
+    {
+        Debug.Log("jsje");
+       SceneManager.LoadScene("Anton");
+    }  */
 
 }
