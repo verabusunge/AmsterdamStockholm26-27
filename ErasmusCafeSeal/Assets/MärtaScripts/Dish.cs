@@ -7,13 +7,17 @@ using System.Threading.Tasks;
 
 namespace Assets.MärtaScripts
 {
-    internal class Dish
+    public class Dish
     {
         public bool isCooked;
         public bool isMixed;
-        public virtual void Ingredients(List<int> Ingrident)
-        {
+        public List<int> ingridients;
 
+        public virtual void Recepie(bool isCooked, bool isMixed, List<int> ingridients)
+        {
+            this.isCooked = isCooked;
+            this.isMixed = isMixed;
+            this.ingridients = ingridients;
         }
 }
     }
