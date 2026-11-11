@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,10 +12,8 @@ public class dadIndgredients : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     [HideInInspector] public Transform parentAfterDrag;
     RectTransform trans;
 
-    private void Start()
-    {
-        trans = GetComponent<RectTransform>();
-    }
+    private void Start(){
+        trans = GetComponent<RectTransform>(); }
     public void OnBeginDrag(PointerEventData eventData)
     {
         Debug.Log("Begindrag");
@@ -27,16 +24,14 @@ public class dadIndgredients : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         if (image != null) image.raycastTarget = false;
     }
 
-    public void OnDrag(PointerEventData eventData)
-    {
+    public void OnDrag(PointerEventData eventData) {
         Debug.Log("Dragging");
-        Vector2 newPosition = new Vector2(trans.position.x, Input.mousePosition.y); 
-        newPosition.y = Input.mousePosition.y;
+        Vector3 newPosition = new Vector3(trans.position.x, Input.mousePosition.get());
+        newPosition.x = Input.mousePosition.get();
         trans.position = newPosition;
     }
 
-    public void OnEndDrag(PointerEventData eventData)
-    {
+    public void OnEndDrag(PointerEventData eventData){
         Debug.Log("End Drag");
         transform.SetParent(parentAfterDrag);
         image.raycastTarget = true;
