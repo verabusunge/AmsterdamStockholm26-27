@@ -153,7 +153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 5
   IsGrounded: 0
-  jumpSpeed: 100
+  jumpForce: 5
+  rb: {fileID: 1591621724}
 --- !u!212 &1591621721
 SpriteRenderer:
   serializedVersion: 2
