@@ -19,7 +19,7 @@ public class MenuScript : MonoBehaviour
  
         void StopGameee()
         {
-            Application.Quit(); //this will exist the game
+            Application.Quit(); //this will exit the game
         }
     }
 
