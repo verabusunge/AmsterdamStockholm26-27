@@ -5,9 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assets.MärtaScripts
-{
-    public class Dish1
+
+    public class Dish
     {
         //public bool isCooked;
         //public bool isMixed;
@@ -19,5 +18,5 @@ namespace Assets.MärtaScripts
             //this.isMixed = isMixed;
             //this.ingridients = ingridients;
         //}
-}
+
     }

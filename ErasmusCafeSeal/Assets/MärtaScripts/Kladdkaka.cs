@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.MärtaScripts
 {
-    public class Kladdkaka1
+    public class Kladdkaka
     {
         //public Kladdkaka()
        // {

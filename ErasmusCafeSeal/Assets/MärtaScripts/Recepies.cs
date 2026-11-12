@@ -1,7 +1,7 @@
 using Assets.MärtaScripts;
 using UnityEngine;
 
-public class RecepieHandbook : MonoBehaviour
+public class Recepies : MonoBehaviour
 {
     //Kladdkaka kladdkaka;
     //void Start()
