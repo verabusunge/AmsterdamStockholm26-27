@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 7caa3092fcee1ec4298a8e66c2aa0019
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5538450508942454952
+    second: sealJump2_0
+  - first:
+      213: -6948464204708147181
+    second: sealJump2_1
+  - first:
+      213: -6267660014394513643
+    second: sealJump2_2
+  - first:
+      213: -4186056543705238336
+    second: sealJump2_3
+  - first:
+      213: 621071217845194632
+    second: sealJump2_4
+  - first:
+      213: 4898870203912569608
+    second: sealJump2_5
+  - first:
+      213: -8328671893118293820
+    second: sealJump2_6
+  - first:
+      213: 1653459244271247404
+    second: sealJump2_7
+  - first:
+      213: -6428811735933937538
+    second: sealJump2_8
+  - first:
+      213: 2292325271710550545
+    second: sealJump2_9
+  - first:
+      213: -3367207486363281521
+    second: sealJump2_10
+  - first:
+      213: -5832102554312883465
+    second: sealJump2_11
+  - first:
+      213: 2607021270247357611
+    second: sealJump2_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sealJump2_0
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 2701
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f47682b987323b0800000000000000
+      internalID: -5538450508942454952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sealJump2_1
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1074
+        width: 3308
+        height: 2222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3109adfce98129f90800000000000000
+      internalID: -6948464204708147181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sealJump2_2
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2525
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5176815ac6cc409a0800000000000000
+      internalID: -6267660014394513643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sealJump2_3
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 2497
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4ffbe80c328e5c0800000000000000
+      internalID: -4186056543705238336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sealJump2_4
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 2479
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88fc1e76bfc7e9800800000000000000
+      internalID: 621071217845194632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sealJump2_5
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 2469
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80344f0ce784cf340800000000000000
+      internalID: 4898870203912569608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sealJump2_6
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 2449
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c867e75a0d9a6c80800000000000000
+      internalID: -8328671893118293820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sealJump2_7
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 2424
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20af591c6442f610800000000000000
+      internalID: 1653459244271247404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sealJump2_8
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 2407
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e789bc799c548c6a0800000000000000
+      internalID: -6428811735933937538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sealJump2_9
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 2333
+        width: 36
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a45f970b9ffcf10800000000000000
+      internalID: 2292325271710550545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sealJump2_10
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 2247
+        width: 30
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87d742a1a64541d0800000000000000
+      internalID: -3367207486363281521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sealJump2_11
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 2199
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2488c60a5301fa0800000000000000
+      internalID: -5832102554312883465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sealJump2_12
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 2190
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac3bfe58000e2420800000000000000
+      internalID: 2607021270247357611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sealJump2_0: -5538450508942454952
+      sealJump2_1: -6948464204708147181
+      sealJump2_10: -3367207486363281521
+      sealJump2_11: -5832102554312883465
+      sealJump2_12: 2607021270247357611
+      sealJump2_2: -6267660014394513643
+      sealJump2_3: -4186056543705238336
+      sealJump2_4: 621071217845194632
+      sealJump2_5: 4898870203912569608
+      sealJump2_6: -8328671893118293820
+      sealJump2_7: 1653459244271247404
+      sealJump2_8: -6428811735933937538
+      sealJump2_9: 2292325271710550545
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -29,32 +29,30 @@ public class PlayerMovement : MonoBehaviour
         if (isJumping == false && isWalking == false)
         {
             playerAnim.SetTrigger("Idle");
-            print("idling");
+          
         }
        
-        if (isJumping == true)
-        {
-            playerAnim.SetTrigger("Jump");
-            print("jumping");
-        }
+        
         if (Keyboard.current.dKey.isPressed) //if D is pressed
         {
             transform.position += Vector3.right * speed * Time.deltaTime; //go right
             isWalking = true;
-            print("walking");
+            //print("walking");
+            facingRight = true;
             if (isJumping == false)
             {
-                playerAnim.SetTrigger("Walk");
+                playerAnim.SetBool("isWalking", true);
             }
-            else
-            {
-                isWalking = false;
-            }
+           
             if (facingLeft == true)
             {
                 Vector3 currentScale = playerSprite.transform.localScale;
-                currentScale.x = 1f;
+                currentScale.x = -1f;
                 transform.localScale = currentScale;
+            }
+            else if (!Keyboard.current.aKey.isPressed)
+            {
+                playerAnim.SetBool("isWalking", false);
             }
 
 
@@ -64,25 +62,26 @@ public class PlayerMovement : MonoBehaviour
             facingLeft = true;
             transform.position += Vector3.left * speed * Time.deltaTime; //go left
             isWalking = true;
-            print("walking");
+            //print("walking");
+            facingLeft = true;
             if (isJumping == false)
             {
-                playerAnim.SetTrigger("Walk");
+                playerAnim.SetBool("isWalking", true);
             }
             if (facingRight == true)
             {
                 Vector3 currentScale = playerSprite.transform.localScale;
-                currentScale.x = -1f;
+                currentScale.x = 1f;
                 transform.localScale = currentScale;
             }
         }
-        else
+        else if (!Keyboard.current.dKey.isPressed)
         {
-            isWalking = false;
+            playerAnim.SetBool("isWalking", false);
         }
-       
-       
-        
+
+
+
 
         /* if (Keyboard.current.spaceKey.wasPressedThisFrame && IsGrounded == true)
          {
@@ -105,16 +104,18 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse); // Lägg till vertical force för att kunna hoppa
         isJumping = true;
+        playerAnim.SetBool("isJumping", true);
     }
 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground")) //if touching something with the tag "DF"
+        if (collision.gameObject.CompareTag("Ground")) //if touching something with the tag "Ground"
         {
             IsGrounded = true; //bool will be true
             print("COLLISION");
             isJumping = false;
+            playerAnim.SetBool("isJumping", false);
         }
        
     }
