@@ -7,7 +7,7 @@ public class MenuScript : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //this will make so the next scene shall play
     }
 
 
@@ -19,7 +19,7 @@ public class MenuScript : MonoBehaviour
  
         void StopGameee()
         {
-            Application.Quit();
+            Application.Quit(); //this will exist the game
         }
     }
 
