@@ -1,4 +1,4 @@
-using Assets.MärtaScripts;
+// using Assets.MartaScripts;
 using UnityEngine;
 
 public class Recepies : MonoBehaviour
