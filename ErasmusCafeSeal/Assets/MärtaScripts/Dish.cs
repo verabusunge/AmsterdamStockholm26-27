@@ -5,19 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assets.MärtaScripts
-{
+
     public class Dish
     {
-        public bool isCooked;
-        public bool isMixed;
-        public List<int> ingridients;
+        //public bool isCooked;
+        //public bool isMixed;
+        //public List<int> ingridients;
 
-        public virtual void Recepie(bool isCooked, bool isMixed, List<int> ingridients)
-        {
-            this.isCooked = isCooked;
-            this.isMixed = isMixed;
-            this.ingridients = ingridients;
-        }
-}
+        //public virtual void Recepie(bool isCooked, bool isMixed, List<int> ingridients)
+        //{
+           // this.isCooked = isCooked;
+            //this.isMixed = isMixed;
+            //this.ingridients = ingridients;
+        //}
+
     }

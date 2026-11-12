@@ -1,44 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.EventSystems;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using UnityEngine.Rendering;
-
 
 public class dadIndgredients : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-   // public int Ingredients;
     public Image image;
     [HideInInspector] public Transform parentAfterDrag;
-    RectTransform trans;
 
-    private void Start()
+    private RectTransform trans;
+    private Canvas rootCanvas;
+
+    private void Awake()
     {
         trans = GetComponent<RectTransform>();
+
+        // Automatically grab the Image if you forgot to drag it into the Inspector
+        if (image == null)
+            image = GetComponent<Image>();
+
+        // Find the top-level Canvas safely
+        Canvas canvas = GetComponentInParent<Canvas>();
+        if (canvas != null)
+            rootCanvas = canvas.rootCanvas;
     }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("Begindrag");
+        Debug.Log("Begin Drag");
         parentAfterDrag = transform.parent;
-        transform.SetParent(transform.root);
+
+        if (rootCanvas != null)
+            transform.SetParent(rootCanvas.transform);
+
         transform.SetAsLastSibling();
 
-        if (image != null) image.raycastTarget = false;
+        if (image != null)
+            image.raycastTarget = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("Dragging");
-        Vector2 newPosition = new Vector2(trans.position.x, Input.mousePosition.y); 
-        newPosition.y = Input.mousePosition.y;
-        trans.position = newPosition;
+        // eventData.position show screen coordinates mouse 
+        trans.position = eventData.position;
     }
 
-    public void OnEndDrag(PointerEventData eventData)
-    {
+    public void OnEndDrag(PointerEventData eventData){  
         Debug.Log("End Drag");
         transform.SetParent(parentAfterDrag);
-        image.raycastTarget = true;
+        if (image != null)
+            image.raycastTarget = true;
     }
 }

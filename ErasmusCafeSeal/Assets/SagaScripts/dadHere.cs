@@ -1,17 +1,18 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.Rendering;
-using UnityEngine.UI;
 
 public class dadHere : MonoBehaviour, IDropHandler
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public void OnDrop(PointerEventData eventData)
-    {
-        GameObject dropped = eventData.pointerDrag;
-        dadIndgredients knot = dropped.GetComponent<dadIndgredients>();
-        knot.parentAfterDrag = transform;
+    [Tooltip("If checked, only one ingredient can be placed her at a time.")]
+    public bool allowOnlyOneItem = true;
+
+    public void OnDrop(PointerEventData eventData){
+        if (allowOnlyOneItem && transform.childCount > 0)
+            return;
+        GameObject droppedObj = eventData.pointerDrag;
+        if (droppedObj != null && droppedObj.TryGetComponent(out dadIndgredients ingredient)){
+            ingredient.parentAfterDrag = transform;
+            Debug.Log($"{droppedObj.name} dropped into {gameObject.name}");
+        }
     }
 }
