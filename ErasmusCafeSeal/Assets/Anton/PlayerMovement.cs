@@ -81,7 +81,15 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
+        if (Keyboard.current.wKey.wasPressedThisFrame)
+        {
+            playerAnim.SetTrigger("Back");
+        }
 
+        if (Keyboard.current.sKey.wasPressedThisFrame)
+        {
+            playerAnim.SetTrigger("Idle");
+        }
 
         /* if (Keyboard.current.spaceKey.wasPressedThisFrame && IsGrounded == true)
          {
